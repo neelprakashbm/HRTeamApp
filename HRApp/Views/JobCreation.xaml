@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HRApp.Views.JobCreation"
+             xmlns:customViews="clr-namespace:HRApp.CustomControls"
+             Style="{StaticResource ContentPageStyle}"
+             Title="Create Job">
+    <StackLayout>
+        <customViews:CustomEntry Placeholder="Job Title"/>
+        <customViews:CustomEntry Placeholder="Skils"/>
+        <customViews:CustomEntry Placeholder="Required Experience"/>
+        <customViews:CustomEntry Placeholder="Expected Notice period"/>
+        <Editor Placeholder="Job Description"/>
+    </StackLayout>
+</ContentPage>

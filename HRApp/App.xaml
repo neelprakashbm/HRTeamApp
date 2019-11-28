@@ -4,11 +4,15 @@
         <Style x:Key="ContentPageStyle" TargetType="ContentPage">
             <Setter Property="Padding" Value="10"/>
         </Style>
+
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" Value="#2196F3"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="CornerRadius" Value="10"/>            
+        </Style>
 
+        <Style TargetType="Editor">
+            <Setter Property="AutoSize" Value="TextChanges"/>
         </Style>
     </Application.Resources>
 </Application>
