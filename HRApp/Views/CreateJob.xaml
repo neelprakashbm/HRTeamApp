@@ -8,8 +8,6 @@
              NavigationPage.HasNavigationBar="True"
              NavigationPage.HasBackButton="True"
              BackgroundColor="WhiteSmoke">
-<<<<<<< HEAD
-=======
     <NavigationPage.TitleView>
         <Label Text="Create Job" Style="{StaticResource NavigationLabel}"/>
     </NavigationPage.TitleView>
@@ -33,35 +31,7 @@
                 <Label Text="Job description" Style="{StaticResource FormLabel}"/>                        
                 <Editor HeightRequest="150"/>                        
             </StackLayout>                            
->>>>>>> b766a75... All referal list added
-
-    <StackLayout>
-        <Frame CornerRadius="20" BackgroundColor="White">
-            <StackLayout Orientation="Vertical">
-                <Label Text="Job Title" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                <customViews:CustomEntry Placeholder="e.g. .NET Devloper"/>
-                <Label Text="Open Positions" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                <customViews:CustomEntry Placeholder="e.g. 4" Keyboard="Numeric"/>
-            </StackLayout>
-        </Frame>
-
-        <Frame CornerRadius="20" BackgroundColor="White" Margin="0,20,0,20">
-            <StackLayout Orientation="Vertical">
-                 <Label Text="Required Experience (Yrs)" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                <customViews:CustomEntry Placeholder="e.g. 4" Keyboard="Numeric"/>
-                <Label Text="Required Technical Skills" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                <customViews:CustomEntry Placeholder="e.g. C#, Angular, HTML"/>
-                <Label Text="Expected Notice Period (Days)" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                <customViews:CustomEntry Placeholder="e.g. 15" Keyboard="Numeric"/>
-            </StackLayout>
-        </Frame>
-
-        <Frame CornerRadius="20" BackgroundColor="White" Margin="0,0,0,20">
-            <StackLayout Orientation="Vertical">
-                <Label Text="Job description" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
-                <Editor Placeholder="e.g. Good communication skills, Agile experience is must..." HeightRequest="150" />
-            </StackLayout>
-        </Frame>
+        
 
         <Button BackgroundColor="LightSkyBlue"
                 Text="Create Job"
@@ -73,4 +43,5 @@
                 Clicked="GoToJobListing"/>
 
     </StackLayout>
+    </ScrollView>
 </ContentPage>

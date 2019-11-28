@@ -24,11 +24,7 @@
 
                                 <Label Text="{Binding SkillSet}" />
 
-<<<<<<< HEAD
                                 <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="LightSkyBlue" Clicked="GoToJobDetails"></Button>
-=======
-                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#50B1FF"></Button>
->>>>>>> b766a75... All referal list added
                             </StackLayout>
 
                         </Frame>
