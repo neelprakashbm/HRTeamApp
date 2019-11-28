@@ -13,4 +13,12 @@
     <Folder Include="Views\" />
     <Folder Include="CustomControls\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\JobCreation.xaml.cs">
+      <DependentUpon>JobCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CreateJob.xaml.cs">
+      <DependentUpon>CreateJob.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

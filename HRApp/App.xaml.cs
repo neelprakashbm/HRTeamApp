@@ -11,7 +11,7 @@ namespace HRApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new JobCreation());
+            MainPage = new NavigationPage(new CreateJob());
         }
 
         protected override void OnStart()

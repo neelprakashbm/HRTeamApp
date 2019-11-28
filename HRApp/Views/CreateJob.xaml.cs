@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace HRApp.Views
 {
-    public partial class JobCreation : ContentPage
+    public partial class CreateJob : ContentPage
     {
-        public JobCreation()
+        public CreateJob()
         {
             InitializeComponent();
         }
