@@ -47,7 +47,7 @@ namespace HRApp.Views
                     break;
 
                 case "Signout":
-                    //  mainPage.Detail = new NavigationPage(new AddPatient());
+                    mainPage.Detail = new NavigationPage(new LoginPage());
                     break;
 
             }

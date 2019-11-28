@@ -5,6 +5,6 @@
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
         <customViews:CustomEntry Placeholder="Username"/>
         <customViews:CustomEntry Placeholder="Password"/>
-        <Button Text="Login"/>
+        <Button Text="Login" Clicked="GoToCreateJob"/>
     </StackLayout>
 </ContentPage>

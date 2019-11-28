@@ -11,5 +11,14 @@ namespace HRApp.Views
         {
             InitializeComponent();
         }
+
+        private void GoToCreateJob(object sender, EventArgs e)
+        {
+            MasterPage fpm = new MasterPage();
+            fpm.Detail = new NavigationPage(new CreateJob());
+            Application.Current.MainPage = fpm;
+
+        }
+        
     }
 }
