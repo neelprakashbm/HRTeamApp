@@ -1,5 +1,6 @@
 using System;
 using HRApp.Views;
+using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,9 +8,10 @@ namespace HRApp
 {
     public partial class App : Application
     {
+        private SQLiteAsyncConnection connection;
         public App()
         {
-            InitializeComponent();
+            InitializeComponent();            
 
             MainPage = new NavigationPage();
             MainPage = new NavigationPage(new LoginPage());
@@ -19,6 +21,9 @@ namespace HRApp
         protected override void OnStart()
         {
             // Handle when your app starts
+            connection = DependencyService.Get<ISQLiteDb>().GetConnection();
+            connection.CreateTableAsync<CandidateReferral>();
+
         }
 
         protected override void OnSleep()

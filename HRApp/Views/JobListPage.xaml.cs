@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using HRApp.Model;
 using Xamarin.Forms;
 
 namespace HRApp.Views

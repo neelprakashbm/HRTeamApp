@@ -16,7 +16,7 @@
                       <DataTemplate>
                             <ViewCell>
                                 <StackLayout Padding="10" Orientation="Horizontal">
-                                  <Image Source="{Binding Image}" WidthRequest="40" VerticalOptions="Center" />
+                                  <!--<Image Source="{Binding Image}" WidthRequest="40" VerticalOptions="Center" />-->
                                   <Label Text="{Binding Title}" Margin="10" FontSize="18"/>
                                 </StackLayout>
                             </ViewCell>

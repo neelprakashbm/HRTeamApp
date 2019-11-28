@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HRApp.Model
+namespace HRApp
 {
     public class JobListing
     {

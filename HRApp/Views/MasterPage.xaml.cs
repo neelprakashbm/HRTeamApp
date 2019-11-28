@@ -21,7 +21,10 @@ namespace HRApp.Views
             var menuList = new List<MenuItem>
             {
                 new MenuItem{ Title = "Create Job", IsAdminMenu= true, Image = "money.png" },
-                new MenuItem{ Title = "Job Openings", Image = "component.png"},
+                new MenuItem{ Title = "Referal List", IsAdminMenu = true, Image = "component.png"},
+                new MenuItem{ Title = "Job Openings", Image = "component.png"},                
+                new MenuItem{ Title = "Refer a Candidate", IsEmployeeMenu=true, Image = "component.png"},
+                new MenuItem{ Title = "Your Referal", IsEmployeeMenu=true, Image = "component.png"},
                 new MenuItem{ Title= "Signout", Image = "signout.png"}
             };
 
@@ -38,12 +41,20 @@ namespace HRApp.Views
                     mainPage.Detail = new NavigationPage(new CreateJob());
                     break;
 
+                case "Referal List":
+                    mainPage.Detail = new NavigationPage(new AdminAllReferalList());
+                    break;
+
                 case "Job Openings":
                     mainPage.Detail = new NavigationPage(new JobListPage());
                     break;
 
                 case "Report":
                     mainPage.Detail = new NavigationPage(new JobListPage());
+                    break;
+
+                case "Refer a Candidate":
+                    mainPage.Detail = new NavigationPage(new CandidateReferPage());
                     break;
 
                 case "Signout":

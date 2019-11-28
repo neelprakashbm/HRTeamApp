@@ -8,6 +8,32 @@
              NavigationPage.HasNavigationBar="True"
              NavigationPage.HasBackButton="True"
              BackgroundColor="WhiteSmoke">
+<<<<<<< HEAD
+=======
+    <NavigationPage.TitleView>
+        <Label Text="Create Job" Style="{StaticResource NavigationLabel}"/>
+    </NavigationPage.TitleView>
+    <ScrollView>
+        <StackLayout Spacing="5">        
+            <StackLayout Orientation="Vertical">
+                <Label Text="Job Title" Style="{StaticResource FormLabel}"/>
+                <customViews:CustomEntry Placeholder=""/>
+                <Label Text="Open Positions" Style="{StaticResource FormLabel}"/>
+                <customViews:CustomEntry  Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                    <Label Text="Required Experience (Yrs)" Style="{StaticResource FormLabel}" />
+                <customViews:CustomEntry  Keyboard="Numeric"/>
+                <Label Text="Required Technical Skills" Style="{StaticResource FormLabel}"/>
+                <customViews:CustomEntry />
+                <Label Text="Expected Notice Period (Days)" Style="{StaticResource FormLabel}"/>
+                <customViews:CustomEntry Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Job description" Style="{StaticResource FormLabel}"/>                        
+                <Editor HeightRequest="150"/>                        
+            </StackLayout>                            
+>>>>>>> b766a75... All referal list added
 
     <StackLayout>
         <Frame CornerRadius="20" BackgroundColor="White">

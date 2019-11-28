@@ -22,4 +22,26 @@
           <DependentUpon>CreateJob.xaml</DependentUpon>
         </Compile>
     </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="Xamarin.Plugin.FilePicker" Version="2.1.34" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="CustomControls\" />
+    <Folder Include="Model\" />
+    <Folder Include="Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\JobCreation.xaml.cs">
+      <DependentUpon>JobCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CreateJob.xaml.cs">
+      <DependentUpon>CreateJob.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
