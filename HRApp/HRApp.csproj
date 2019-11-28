@@ -15,11 +15,11 @@
         <Folder Include="Models\" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Update="Views\CreateJob.xaml.cs">
-            <DependentUpon>CreateJob.xaml</DependentUpon>
-        </Compile>
         <Compile Update="Views\JobDetails.xaml.cs">
           <DependentUpon>JobDetails.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CreateJob.xaml.cs">
+          <DependentUpon>CreateJob.xaml</DependentUpon>
         </Compile>
     </ItemGroup>
 </Project>

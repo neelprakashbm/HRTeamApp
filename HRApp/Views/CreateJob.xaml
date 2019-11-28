@@ -8,42 +8,43 @@
              NavigationPage.HasNavigationBar="True"
              NavigationPage.HasBackButton="True"
              BackgroundColor="WhiteSmoke">
-    <NavigationPage.TitleView>
-        <Label Text="Create Job" Style="{StaticResource NavigationLabel}"/>
-    </NavigationPage.TitleView>
-    <ScrollView>
-        <StackLayout Spacing="5">        
-                <StackLayout>
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="Job Title" Style="{StaticResource FormLabel}"/>
-                        <customViews:CustomEntry Placeholder=""/>
-                        <Label Text="Open Positions" Style="{StaticResource FormLabel}"/>
-                        <customViews:CustomEntry  Keyboard="Numeric"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Vertical">
-                         <Label Text="Required Experience (Yrs)" Style="{StaticResource FormLabel}" />
-                        <customViews:CustomEntry  Keyboard="Numeric"/>
-                        <Label Text="Required Technical Skills" Style="{StaticResource FormLabel}"/>
-                        <customViews:CustomEntry />
-                        <Label Text="Expected Notice Period (Days)" Style="{StaticResource FormLabel}"/>
-                        <customViews:CustomEntry Keyboard="Numeric"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="Job description" Style="{StaticResource FormLabel}"/>                        
-                        <Editor HeightRequest="150"/>                        
-                    </StackLayout>
-                </StackLayout>
-            
 
-            <Button BackgroundColor="#50B1FF"
-                    Text="Create Job"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="EndAndExpand"
-                    Margin="0,10,0,10"
-                    Clicked="GoToJobListing"/>
+    <StackLayout>
+        <Frame CornerRadius="20" BackgroundColor="White">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Job Title" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                <customViews:CustomEntry Placeholder="e.g. .NET Devloper"/>
+                <Label Text="Open Positions" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                <customViews:CustomEntry Placeholder="e.g. 4" Keyboard="Numeric"/>
+            </StackLayout>
+        </Frame>
 
-        </StackLayout>
-    </ScrollView>
+        <Frame CornerRadius="20" BackgroundColor="White" Margin="0,20,0,20">
+            <StackLayout Orientation="Vertical">
+                 <Label Text="Required Experience (Yrs)" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                <customViews:CustomEntry Placeholder="e.g. 4" Keyboard="Numeric"/>
+                <Label Text="Required Technical Skills" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                <customViews:CustomEntry Placeholder="e.g. C#, Angular, HTML"/>
+                <Label Text="Expected Notice Period (Days)" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                <customViews:CustomEntry Placeholder="e.g. 15" Keyboard="Numeric"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame CornerRadius="20" BackgroundColor="White" Margin="0,0,0,20">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Job description" FontSize="20" TextColor="Black" HorizontalOptions="Start"/>
+                <Editor Placeholder="e.g. Good communication skills, Agile experience is must..." HeightRequest="150" />
+            </StackLayout>
+        </Frame>
+
+        <Button BackgroundColor="LightSkyBlue"
+                Text="Create Job"
+                TextColor="White"
+                CornerRadius="20"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="EndAndExpand"
+                Margin="0,10,0,10"
+                Clicked="GoToJobListing"/>
+
+    </StackLayout>
 </ContentPage>
