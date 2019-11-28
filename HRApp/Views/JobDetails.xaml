@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRApp.Views.JobDetails"
+             NavigationPage.HasNavigationBar="True"
+             NavigationPage.HasBackButton="True"
+             Title="Job Detail"
+             BackgroundColor="WhiteSmoke">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=".NET Developer"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="Start"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="15,15,15,15"/>
+            <Frame CornerRadius="20" BackgroundColor="White" Margin="15,15,15,15">
+                <Label Text="&#x2022; Number of Positions - 4
+                                                    &#x2022; Required Experience - 4Yrs
+                                                    &#x2022; SkillSet - C#, Xaml, MVVM, XAMARIN
+                                                    &#x2022; Expected Notice Period - 30 Days
+                                                    &#x2022; Job description -
+                                                             &#x2022; Good Communication and writing skill
+                                                             &#x2022; Jira / Agile development
+                                                             &#x2022; Expert in Git"
+                         TextColor="Black"></Label>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

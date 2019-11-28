@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
@@ -17,6 +17,9 @@
     <ItemGroup>
         <Compile Update="Views\CreateJob.xaml.cs">
             <DependentUpon>CreateJob.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\JobDetails.xaml.cs">
+          <DependentUpon>JobDetails.xaml</DependentUpon>
         </Compile>
     </ItemGroup>
 </Project>

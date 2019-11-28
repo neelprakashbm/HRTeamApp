@@ -20,6 +20,11 @@ namespace HRApp.Views
         };
 
         }
+        private void GoToJobDetails(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new JobDetails());
+        }
+        
 
     }
 }

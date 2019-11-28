@@ -24,7 +24,7 @@
 
                                 <Label Text="{Binding SkillSet}" />
 
-                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="LightSkyBlue"></Button>
+                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="LightSkyBlue" Clicked="GoToJobDetails"></Button>
                             </StackLayout>
 
                         </Frame>
