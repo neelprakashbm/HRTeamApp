@@ -6,5 +6,32 @@
              BackgroundColor="WhiteSmoke">
 
     <ContentPage.Content>
+
+        <ListView x:Name="jobListView" HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="WhiteSmoke">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame CornerRadius="20" BackgroundColor="White" Margin="10,10,10,10">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding JobTitle}"
+                                       HorizontalOptions="FillAndExpand"
+                                       TextColor="Black"/>
+
+                                    <Label VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding Positions}" TextColor="Red" />
+
+                                </StackLayout>
+
+                                <Label Text="{Binding SkillSet}" />
+
+                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="LightSkyBlue"></Button>
+                            </StackLayout>
+
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </ContentPage.Content>
 </ContentPage>

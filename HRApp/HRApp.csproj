@@ -12,6 +12,7 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="CustomControls\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\JobCreation.xaml.cs">
