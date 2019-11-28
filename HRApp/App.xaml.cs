@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using HRApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +11,12 @@ namespace HRApp
         {
             InitializeComponent();
 
+<<<<<<< HEAD
             MainPage = new NavigationPage(new CreateJob());
+=======
+            MainPage = new MasterPage();
+            (MainPage as MasterDetailPage).Detail = new NavigationPage(new JobCreation());            
+>>>>>>> 1994e50... Hamburger menu and Proxima nova font added
         }
 
         protected override void OnStart()
