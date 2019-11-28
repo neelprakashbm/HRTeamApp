@@ -11,12 +11,8 @@ namespace HRApp
         {
             InitializeComponent();
 
-<<<<<<< HEAD
-            MainPage = new NavigationPage(new CreateJob());
-=======
             MainPage = new MasterPage();
-            (MainPage as MasterDetailPage).Detail = new NavigationPage(new JobCreation());            
->>>>>>> 1994e50... Hamburger menu and Proxima nova font added
+            (MainPage as MasterDetailPage).Detail = new NavigationPage(new CreateJob());            
         }
 
         protected override void OnStart()

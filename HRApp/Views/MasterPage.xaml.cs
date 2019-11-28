@@ -35,7 +35,7 @@ namespace HRApp.Views
             switch (menu.Title)
             {
                 case "Create Job":
-                    mainPage.Detail = new NavigationPage(new JobCreation());
+                    mainPage.Detail = new NavigationPage(new CreateJob());
                     break;
 
                 case "Job Openings":

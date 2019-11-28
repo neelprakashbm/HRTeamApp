@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
@@ -12,21 +11,15 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="CustomControls\" />
-<<<<<<< HEAD
     <Folder Include="Model\" />
-=======
     <Folder Include="Models\" />
->>>>>>> 1994e50... Hamburger menu and Proxima nova font added
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\JobCreation.xaml.cs">
       <DependentUpon>JobCreation.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Update="Views\CreateJob.xaml.cs">
       <DependentUpon>CreateJob.xaml</DependentUpon>
     </Compile>
-=======
->>>>>>> 1994e50... Hamburger menu and Proxima nova font added
   </ItemGroup>
 </Project>
