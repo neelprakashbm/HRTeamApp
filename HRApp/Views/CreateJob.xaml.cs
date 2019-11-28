@@ -11,5 +11,10 @@ namespace HRApp.Views
         {
             InitializeComponent();
         }
+
+        private void GoToJobListing(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new JobListPage());
+        }
     }
 }
