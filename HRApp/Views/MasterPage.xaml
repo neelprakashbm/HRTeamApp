@@ -27,6 +27,6 @@
         </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-        <pages:JobCreation/>        
+        <pages:CreateJob/>        
     </MasterDetailPage.Detail>
 </MasterDetailPage>
