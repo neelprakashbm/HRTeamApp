@@ -5802,6 +5802,12 @@ namespace HRApp.Droid
 			// aapt resource value: 0x7F070076
 			public const int tooltip_frame_light = 2131165302;
 			
+			// aapt resource value: 0x7F070077
+			public const int user24 = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int user48 = 2131165304;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

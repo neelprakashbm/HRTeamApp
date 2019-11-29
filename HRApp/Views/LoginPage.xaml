@@ -12,9 +12,20 @@
                VerticalOptions="Start"
                Margin="0,50,0,50"/>
 
-        <StackLayout VerticalOptions="Center" HeightRequest="300" Opacity="1">
-            <Grid VerticalOptions="Center">
+        <StackLayout VerticalOptions="Center" Opacity="1">
+            <Grid VerticalOptions="Center" HeightRequest="500">
                 <Image Source="bg.png" Aspect="AspectFill" />
+
+                <Frame CornerRadius="50"
+                       HeightRequest="60"
+                       WidthRequest="60"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"
+                       Margin="0,30,0,30"
+                       BackgroundColor="WhiteSmoke"
+                       BorderColor="#50B1FF">
+                    <Image Source="user48.png" Aspect="Fill" />
+                </Frame>
 
                 <StackLayout Spacing="0"  VerticalOptions="Center">
                     <StackLayout Padding="15,7,15,15">
@@ -29,7 +40,14 @@
                                                  x:Name="Password"
                                                  BackgroundColor="White"
                                                  TextColor="#50B1FF"
-                                                 PlaceholderColor="#50B1FF"/>
+                                                 PlaceholderColor="#50B1FF"
+                                                 Margin="0,20,0,20"/>
+
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox IsChecked="False" BackgroundColor="Transparent" Color="White" HorizontalOptions="Start" VerticalOptions="Start" />
+                            <Label Text="Remember Me" TextColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="Start" ></Label>
+                            <Label Text="Forgot Password?" TextDecorations="Underline" TextColor="White" HorizontalOptions="EndAndExpand" VerticalOptions="Start" ></Label>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </Grid>
