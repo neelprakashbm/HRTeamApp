@@ -1,14 +1,13 @@
-using System;
 using HRApp.Views;
 using SQLite;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace HRApp
 {
     public partial class App : Application
-    {
-        private SQLiteAsyncConnection connection;
+    {        
+        private SQLiteAsyncConnection connection;        
+
         public App()
         {
             InitializeComponent();            
@@ -23,6 +22,7 @@ namespace HRApp
             // Handle when your app starts
             connection = DependencyService.Get<ISQLiteDb>().GetConnection();
             connection.CreateTableAsync<CandidateReferral>();
+            connection.CreateTableAsync<Job>();
 
         }
 

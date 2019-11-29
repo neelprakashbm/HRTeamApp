@@ -15,32 +15,36 @@
         <StackLayout Spacing="5">        
             <StackLayout Orientation="Vertical">
                 <Label Text="Job Title" Style="{StaticResource FormLabel}"/>
-                <customViews:CustomEntry Placeholder=""/>
+                <customViews:CustomEntry x:Name="JobTitle" Placeholder=""/>
+
                 <Label Text="Open Positions" Style="{StaticResource FormLabel}"/>
-                <customViews:CustomEntry  Keyboard="Numeric"/>
+                <customViews:CustomEntry  x:Name="OpenPositions" Keyboard="Numeric"/>
             </StackLayout>
+
             <StackLayout Orientation="Vertical">
-                    <Label Text="Required Experience (Yrs)" Style="{StaticResource FormLabel}" />
-                <customViews:CustomEntry  Keyboard="Numeric"/>
+                <Label Text="Required Experience (Yrs)" Style="{StaticResource FormLabel}" />
+                <customViews:CustomEntry x:Name="RequiredExperience"  Keyboard="Numeric"/>
+
                 <Label Text="Required Technical Skills" Style="{StaticResource FormLabel}"/>
-                <customViews:CustomEntry />
+                <customViews:CustomEntry x:Name="SkillSet" />
+
                 <Label Text="Expected Notice Period (Days)" Style="{StaticResource FormLabel}"/>
-                <customViews:CustomEntry Keyboard="Numeric"/>
+                <customViews:CustomEntry  x:Name="ExpectedNoticePeriod" Keyboard="Numeric"/>
             </StackLayout>
+
             <StackLayout Orientation="Vertical">
                 <Label Text="Job description" Style="{StaticResource FormLabel}"/>                        
-                <Editor HeightRequest="150"/>                        
-            </StackLayout>                            
-        
+                <Editor x:Name="JobDescription" HeightRequest="150"/>                        
+            </StackLayout>        
 
-        <Button BackgroundColor="LightSkyBlue"
+        <Button BackgroundColor="#50B1FF" Clicked="Save"
                 Text="Create Job"
                 TextColor="White"
                 CornerRadius="20"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="EndAndExpand"
                 Margin="0,10,0,10"
-                Clicked="GoToJobListing"/>
+                />
 
     </StackLayout>
     </ScrollView>

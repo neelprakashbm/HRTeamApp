@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,15 +21,22 @@ namespace HRApp.Views
         {
             var menuList = new List<MenuItem>
             {
-                new MenuItem{ Title = "Create Job", IsAdminMenu= true, Image = "money.png" },
-                new MenuItem{ Title = "Referal List", IsAdminMenu = true, Image = "component.png"},
-                new MenuItem{ Title = "Job Openings", Image = "component.png"},                
-                new MenuItem{ Title = "Refer a Candidate", IsEmployeeMenu=true, Image = "component.png"},
-                new MenuItem{ Title = "Your Referal", IsEmployeeMenu=true, Image = "component.png"},
-                new MenuItem{ Title= "Signout", Image = "signout.png"}
+                new MenuItem{ Title = "Create Job", IsAdminMenu= true, IsEmployeeMenu = false, Image = "money.png" },
+                new MenuItem{ Title = "Referal List", IsAdminMenu = true, IsEmployeeMenu = false, Image = "component.png"},
+                new MenuItem{ Title = "Job Openings", IsAdminMenu = true, IsEmployeeMenu = true, Image = "component.png"},
+                new MenuItem{ Title = "Refer a Candidate", IsAdminMenu = false, IsEmployeeMenu=true, Image = "component.png"},
+                new MenuItem{ Title = "Your Referal", IsAdminMenu = false,  IsEmployeeMenu=true, Image = "component.png"},
+                new MenuItem{ Title= "Signout", IsAdminMenu = true, IsEmployeeMenu = true, Image = "signout.png"}
             };
 
-            listView.ItemsSource = menuList;
+            if (Application.Current.Properties["LoggedInUserType"].ToString() == "Admin")
+            {
+                listView.ItemsSource = menuList.Where(m => m.IsAdminMenu == true).ToList();
+            }
+            else
+            {
+                listView.ItemsSource = menuList.Where(m => m.IsEmployeeMenu == true).ToList();
+            }            
         }
 
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -57,7 +65,11 @@ namespace HRApp.Views
                     mainPage.Detail = new NavigationPage(new CandidateReferPage());
                     break;
 
-                case "Signout":
+                case "Your Referal":
+                    mainPage.Detail = new NavigationPage(new AdminAllReferalList());
+                    break;
+
+                case "Signout":                    
                     mainPage.Detail = new NavigationPage(new LoginPage());
                     break;
 

@@ -3,8 +3,8 @@
              xmlns:customViews="clr-namespace:HRApp.CustomControls"
              Style="{StaticResource ContentPageStyle}">
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
-        <customViews:CustomEntry Placeholder="Username"/>
-        <customViews:CustomEntry Placeholder="Password"/>
-        <Button Text="Login" Clicked="GoToCreateJob"/>
+        <customViews:CustomEntry Placeholder="Username" x:Name="Username"/>
+        <customViews:CustomEntry Placeholder="Password" x:Name="Password"/>
+        <Button Text="Login" BackgroundColor="#50B1FF" Clicked="GoToCreateJob"/>
     </StackLayout>
 </ContentPage>

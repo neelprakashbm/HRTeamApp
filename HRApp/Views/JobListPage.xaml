@@ -18,13 +18,13 @@
                                        HorizontalOptions="FillAndExpand"
                                        TextColor="Black"/>
 
-                                    <Label VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding Positions}" TextColor="Red" />
+                                    <Label VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding OpenPositions}" TextColor="Red" />
 
                                 </StackLayout>
 
                                 <Label Text="{Binding SkillSet}" />
 
-                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="LightSkyBlue" Clicked="GoToJobDetails"></Button>
+                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#50B1FF" Clicked="GoToJobDetails"></Button>
                             </StackLayout>
 
                         </Frame>
