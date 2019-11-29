@@ -1,10 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HRApp.Views.LoginPage"
              xmlns:customViews="clr-namespace:HRApp.CustomControls"
-             Style="{StaticResource ContentPageStyle}">
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
-        <customViews:CustomEntry Placeholder="Username" x:Name="Username"/>
-        <customViews:CustomEntry IsPassword="True" Placeholder="Password" x:Name="Password"/>
-        <Button Text="Login" BackgroundColor="#50B1FF" Clicked="GoToCreateJob"/>
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+        <Label Text="Accion Jobs"
+               FontSize="36"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Start"
+               Margin="0,50,0,50"/>
+
+        <StackLayout VerticalOptions="Center" HeightRequest="300" Opacity="1">
+            <Grid VerticalOptions="Center">
+                <Image Source="bg.png" Aspect="AspectFill" />
+
+                <StackLayout Spacing="0"  VerticalOptions="Center">
+                    <StackLayout Padding="15,7,15,15">
+                        <customViews:CustomEntry Placeholder="Username"
+                                                 x:Name="Username"
+                                                 VerticalOptions="CenterAndExpand"
+                                                 BackgroundColor="White"
+                                                 TextColor="#50B1FF"
+                                                 PlaceholderColor="#50B1FF"/>
+                        <customViews:CustomEntry IsPassword="True"
+                                                 Placeholder="Password"
+                                                 x:Name="Password"
+                                                 BackgroundColor="White"
+                                                 TextColor="#50B1FF"
+                                                 PlaceholderColor="#50B1FF"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+        <Button Text="Login"
+                BackgroundColor="#eeeeee"
+                TextColor="#50B1FF"
+                Clicked="GoToCreateJob"
+                HeightRequest="100"
+                Margin="0,-5,0,0"
+                FontSize="Large"
+                CornerRadius="0"/>
     </StackLayout>
+
 </ContentPage>
