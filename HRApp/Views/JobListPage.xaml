@@ -4,7 +4,7 @@
              NavigationPage.HasBackButton="True"             
              BackgroundColor="WhiteSmoke">
     <NavigationPage.TitleView>
-        <Label Text="Job Listing" Style="{StaticResource NavigationLabel}"/>
+        <Label Text="Job Openings" Style="{StaticResource NavigationLabel}"/>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <ListView x:Name="jobListView" HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="WhiteSmoke">

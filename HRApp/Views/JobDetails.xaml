@@ -16,9 +16,10 @@
             <Label x:Name="RequiredExperience" Style="{StaticResource JobDetailLabel}"/>
             <Label x:Name="SkillSet" Style="{StaticResource JobDetailLabel}"/>
             <Label x:Name="ExpectedNoticePeriod" Style="{StaticResource JobDetailLabel}"/>
-            <Label x:Name="JobDescription" Style="{StaticResource JobDetailLabel}"/>
+            <Label Text="Job Description:" Style="{StaticResource JobDetailLabel}"/>
+            <Label x:Name="JobDescriptionValue" Style="{StaticResource JobDescription}"/>
             
-            <Button Text="Refer A Candidate" Clicked="Refer"/>
+            <Button Text="Refer A Candidate" x:Name="ReferCandidateButton" Clicked="Refer"/>
 
             <!--<Label Text=".NET Developer"
                    TextColor="Black"

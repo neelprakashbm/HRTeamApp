@@ -8,6 +8,10 @@
         <OnPlatform x:TypeArguments="x:String" x:Key="ProximaNovaBold">
             <On Platform="Android" Value="ProximaNovaBold.ttf#Proxima Nova Rg Bold"/>
         </OnPlatform>
+        
+        <OnPlatform x:TypeArguments="x:String" x:Key="MontserratLight">
+            <On Platform="Android" Value="MontserratAlternates-Light#Montserrat Light"/>
+        </OnPlatform>
 
         <OnPlatform x:TypeArguments="x:String" x:Key="MontserratMedium">
             <On Platform="Android" Value="Montserrat-Medium.otf#Montserrat Medium"/>
@@ -78,6 +82,11 @@
             <Setter Property="FontSize" Value="17"/>
             <Setter Property="Margin" Value="0,5"/>
             <Setter Property="FontFamily" Value="{StaticResource MontserratSemiBold}"/>
+        </Style>
+
+        <Style x:Key="JobDescription" TargetType="Label" BasedOn="{StaticResource JobDetailLabel}">
+            <Setter Property="FontFamily" Value="MontserratLight"/>
+            <Setter Property="FontSize" Value="16"/>
         </Style>
     </Application.Resources>
 </Application>

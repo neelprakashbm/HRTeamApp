@@ -13,7 +13,7 @@ namespace HRApp
             InitializeComponent();            
 
             MainPage = new NavigationPage();
-            MainPage = new NavigationPage(new JobListPage());
+            MainPage = new NavigationPage(new LoginPage());
             /*(MainPage as MasterDetailPage).Detail = new NavigationPage(new CreateJob());*/            
         }
 

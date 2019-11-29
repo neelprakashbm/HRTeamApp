@@ -11,12 +11,17 @@ namespace HRApp.Views
         {
             InitializeComponent();
 
+            if(Application.Current.Properties["LoggedInUserType"].ToString() == "Admin")
+            {
+                ReferCandidateButton.IsVisible = false;
+            }
+
             JobTitle.Text = job.JobTitle;
             OpenPositions.Text = "No of Positions : "+job.OpenPositions;
             RequiredExperience.Text = "Required Experience : " + job.RequiredExperience + " Years";
             SkillSet.Text = "SkillSet : " + job.SkillSet;
             ExpectedNoticePeriod.Text = "Expected Notice Period : " + job.ExpectedNoticePeriod + " Days";
-            JobDescription.Text = "Job Description : " + job.JobDescription;            
+            JobDescriptionValue.Text = job.JobDescription;            
         }
 
         private void Refer(object sender, EventArgs e)
