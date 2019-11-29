@@ -2,13 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HRApp.Views.JobDetails"
+             Style="{StaticResource ContentPageStyle}"
              NavigationPage.HasNavigationBar="True"
              NavigationPage.HasBackButton="True"
-             Title="Job Detail"
              BackgroundColor="WhiteSmoke">
+    <NavigationPage.TitleView>
+        <Label Text="Job Detail" Style="{StaticResource NavigationLabel}"/>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text=".NET Developer"
+            <Label x:Name="JobTitle" Style="{StaticResource JobTitleLabel}"/>
+            <Label x:Name="OpenPositions" Style="{StaticResource JobDetailLabel}"/>
+            <Label x:Name="RequiredExperience" Style="{StaticResource JobDetailLabel}"/>
+            <Label x:Name="SkillSet" Style="{StaticResource JobDetailLabel}"/>
+            <Label x:Name="ExpectedNoticePeriod" Style="{StaticResource JobDetailLabel}"/>
+            <Label x:Name="JobDescription" Style="{StaticResource JobDetailLabel}"/>
+            
+            <Button Text="Refer A Candidate" Clicked="Refer"/>
+
+            <!--<Label Text=".NET Developer"
                    TextColor="Black"
                    FontSize="Large"
                    FontAttributes="Bold"
@@ -26,7 +38,7 @@
                                                              &#x2022; Expert in Git"
                          TextColor="Black"></Label>
 
-            </Frame>
+            </Frame>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

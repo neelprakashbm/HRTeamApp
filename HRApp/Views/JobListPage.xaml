@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HRApp.Views.JobListPage"
              NavigationPage.HasNavigationBar="True"
-             NavigationPage.HasBackButton="True"
-             Title="Job Listing"
+             NavigationPage.HasBackButton="True"             
              BackgroundColor="WhiteSmoke">
-
+    <NavigationPage.TitleView>
+        <Label Text="Job Listing" Style="{StaticResource NavigationLabel}"/>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-
         <ListView x:Name="jobListView" HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="WhiteSmoke">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -24,7 +24,7 @@
 
                                 <Label Text="{Binding SkillSet}" />
 
-                                <Button Text="View more details" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#50B1FF" Clicked="GoToJobDetails"></Button>
+                                <Button Text="View more details" CommandParameter="{Binding .}" VerticalOptions="End" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#50B1FF" Clicked="GoToJobDetails"></Button>
                             </StackLayout>
 
                         </Frame>

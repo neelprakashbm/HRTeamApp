@@ -43,7 +43,8 @@ namespace HRApp.Views
 
         private void GoToJobDetails(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new JobDetails());
+            var job = (sender as Button).CommandParameter as Job; 
+            Navigation.PushAsync(new JobDetails(job));
         }
         
 

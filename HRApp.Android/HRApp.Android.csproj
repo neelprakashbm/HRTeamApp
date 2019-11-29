@@ -109,6 +109,9 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\ProximaNovaRegular.ttf" />
     <AndroidAsset Include="Assets\ProximaNovaBold.ttf" />
+    <AndroidAsset Include="Assets\Montserrat-ExtraBold.otf" />
+    <AndroidAsset Include="Assets\Montserrat-Medium.otf" />
+    <AndroidAsset Include="Assets\Montserrat-SemiBold.otf" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

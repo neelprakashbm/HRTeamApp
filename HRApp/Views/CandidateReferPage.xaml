@@ -30,7 +30,7 @@
                 <customViews:CustomEntry x:Name="OpenForRelocation"/>
 
                 <Label Text="Upload Resume" Style="{StaticResource FormLabel}"/>
-                <Button Text="Select File" Clicked="ChooseFile"/>
+                <Button Text="Select Resume" Clicked="ChooseFile" WidthRequest="180" HorizontalOptions="Start" Margin="0,0,0,10"/>
 
                 <Button Text="Submit" Clicked="Save"/>
             </StackLayout>
