@@ -21,28 +21,48 @@
                        WidthRequest="60"
                        VerticalOptions="Start"
                        HorizontalOptions="Center"
-                       Margin="0,30,0,30"
+                       Margin="0,20,0,20"
                        BackgroundColor="WhiteSmoke"
                        BorderColor="#50B1FF">
                     <Image Source="user48.png" Aspect="Fill" />
                 </Frame>
 
-                <StackLayout Spacing="0"  VerticalOptions="Center">
+                <StackLayout Spacing="0" VerticalOptions="Center">
                     <StackLayout Padding="15,7,15,15">
-                        <customViews:CustomEntry Placeholder="Username"
+                        <Frame
+                   CornerRadius="30"
+                   IsClippedToBounds="true"
+                            HeightRequest="40">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="user24.png"></Image>
+                                <customViews:CustomEntry Placeholder="Username"
                                                  x:Name="Username"
-                                                 VerticalOptions="CenterAndExpand"
+                                                 VerticalOptions="EndAndExpand"
                                                  BackgroundColor="White"
                                                  TextColor="#50B1FF"
-                                                 PlaceholderColor="#50B1FF"/>
-                        <customViews:CustomEntry IsPassword="True"
+                                                 PlaceholderColor="#50B1FF"
+                                                 HasTransparentBorder = "True"/>
+                            </StackLayout>
+
+                        </Frame>
+
+                        <Frame
+                   CornerRadius="30"
+                   IsClippedToBounds="true"
+                             HeightRequest="40"
+                            Margin="0,20,0,20">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="user24.png"></Image>
+                                <customViews:CustomEntry IsPassword="True"
                                                  Placeholder="Password"
                                                  x:Name="Password"
                                                  BackgroundColor="White"
                                                  TextColor="#50B1FF"
+                                                 VerticalOptions="EndAndExpand"
                                                  PlaceholderColor="#50B1FF"
-                                                 Margin="0,20,0,20"/>
-
+                                                 HasTransparentBorder="True"/>
+                            </StackLayout>
+                        </Frame>
                         <StackLayout Orientation="Horizontal">
                             <CheckBox IsChecked="False" BackgroundColor="Transparent" Color="White" HorizontalOptions="Start" VerticalOptions="Start" />
                             <Label Text="Remember Me" TextColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="Start" ></Label>

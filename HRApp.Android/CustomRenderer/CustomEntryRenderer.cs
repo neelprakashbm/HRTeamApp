@@ -21,13 +21,30 @@ namespace HRApp.Droid.CustomRenderer
 
             if (e.NewElement != null)
             {
-                var gradientBackground = new GradientDrawable();
-                gradientBackground.SetShape(ShapeType.Rectangle);
-                
-                gradientBackground.SetStroke(2, Color.FromHex("#50B1FF").ToAndroid());
-                Control.SetBackground(gradientBackground);
+                var customControl = (CustomEntry)Element;
+                if (customControl.HasTransparentBorder)
+                {
+                    ApplyBorder();
+
+                }
+                else
+                {
+                    var gradientBackground = new GradientDrawable();
+                    gradientBackground.SetShape(ShapeType.Rectangle);
+
+                    gradientBackground.SetStroke(2, Color.FromHex("#50B1FF").ToAndroid());
+                    Control.SetBackground(gradientBackground);
+                }
             }
         }
-    
+
+        private void ApplyBorder()
+        {
+            var gradientBackground = new GradientDrawable();
+            gradientBackground.SetShape(ShapeType.Rectangle);
+
+            gradientBackground.SetStroke(0, Color.Transparent.ToAndroid());
+            Control.SetBackground(gradientBackground);
+        }
     }
 }
