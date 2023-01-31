@@ -7,11 +7,11 @@ namespace HRApp.Views
 {
     public partial class LoginPage : ContentPage
     {
-        const string AdminUserName= "admin@accionlabs.com";
-        const string AdminPassword = "admin";
+        const string AdminUserName= "xxxxxx@yyyyyyy.com";
+        const string AdminPassword = "******";
 
-        const string EmployeeUserName = "emp@accionlabs.com";
-        const string EmployeePassword = "admin";
+        const string EmployeeUserName = "xxx@yyyyyyy.com";
+        const string EmployeePassword = "******";
 
         private bool IsLoginSuccess;
 
